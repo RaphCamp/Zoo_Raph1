@@ -58,25 +58,25 @@
     <Compile Include="Animaux.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Entree_Zoo.cs">
+    <Compile Include="Formulaires\Entree_Zoo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Entree_Zoo.Designer.cs">
+    <Compile Include="Formulaires\Entree_Zoo.Designer.cs">
       <DependentUpon>Entree_Zoo.cs</DependentUpon>
     </Compile>
     <Compile Include="Especes.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="Information.cs">
+    <Compile Include="Formulaires\Information.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Information.Designer.cs">
+    <Compile Include="Formulaires\Information.Designer.cs">
       <DependentUpon>Information.cs</DependentUpon>
     </Compile>
-    <Compile Include="Lions.cs">
+    <Compile Include="Formulaires\Lions.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Lions.Designer.cs">
+    <Compile Include="Formulaires\Lions.Designer.cs">
       <DependentUpon>Lions.cs</DependentUpon>
     </Compile>
     <Compile Include="Model1.Context.cs">
@@ -94,10 +94,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
-    <Compile Include="Taureaux.cs">
+    <Compile Include="Formulaires\Taureaux.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Taureaux.Designer.cs">
+    <Compile Include="Formulaires\Taureaux.Designer.cs">
       <DependentUpon>Taureaux.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
@@ -107,16 +107,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ZOO_RaphDataSet.xsd</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Entree_Zoo.resx">
+    <EmbeddedResource Include="Formulaires\Entree_Zoo.resx">
       <DependentUpon>Entree_Zoo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Information.resx">
+    <EmbeddedResource Include="Formulaires\Information.resx">
       <DependentUpon>Information.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Lions.resx">
+    <EmbeddedResource Include="Formulaires\Lions.resx">
       <DependentUpon>Lions.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Taureaux.resx">
+    <EmbeddedResource Include="Formulaires\Taureaux.resx">
       <DependentUpon>Taureaux.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
