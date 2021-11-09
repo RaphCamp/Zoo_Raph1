@@ -23,9 +23,9 @@ namespace Zoo_Raph
             List<Zoo_Raph.Animaux> Infos = MesDonnees.Animaux.ToList();
             int Index = Infos.FindIndex(i => i.Nom == animalName);
             //Récupération des informations de l'espèce de l'animal
-/*            List<Zoo_Raph.Especes> Infos_Espece = MesDonnees.Especes.ToList();
-            int Index_Espece = Infos_Espece.FindIndex(i => i.EspeceAnimal == Infos[Index].Especes.ToString());
-*/
+            List<Zoo_Raph.Especes> Infos_Espece = MesDonnees.Especes.ToList();
+            int Index_Espece = Infos_Espece.FindIndex(i => i.EspeceAnimal == Infos[Index].Espece);
+
             InitializeComponent();
             //Informations relatives à l'animal
             this.Lab_Name.Text = "Nom: " + animalName;
@@ -36,8 +36,8 @@ namespace Zoo_Raph
             this.Lab_Statut.Text = "Statut: " + Infos[Index].Statut;
             this.Pic_Animal.Image = animalImage;
             //Informations relatives à son espèce
-/*            this.Lab_Famille.Text = "Famille: " + Infos_Espece[Index_Espece].Famille; 
-*/        }
+            this.Lab_Famille.Text = "Famille: " + Infos_Espece[Index_Espece].Famille; 
+        }
 
         private void Information_Load(object sender, EventArgs e)
         {
