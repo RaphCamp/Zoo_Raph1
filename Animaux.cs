@@ -22,6 +22,6 @@ namespace Zoo_Raph
         public string Sexe { get; set; }
         public string Statut { get; set; }
     
-        public virtual Zoo_Especes Especes { get; set; }
+        public virtual Mon_Zoo Especes { get; set; }
     }
 }

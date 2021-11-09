@@ -16,7 +16,7 @@ namespace Zoo_Raph
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Zoo_Especes especes = new Zoo_Especes();
+            Mon_Zoo especes = new Mon_Zoo();
             Application.Run(especes);
         }
     }

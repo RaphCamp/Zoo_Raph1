@@ -26,6 +26,6 @@ namespace Zoo_Raph
         }
     
         public virtual DbSet<Animaux> Animaux { get; set; }
-        public virtual DbSet<Zoo_Especes> Especes { get; set; }
+        public virtual DbSet<Especes> Especes { get; set; }
     }
 }

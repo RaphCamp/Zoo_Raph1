@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Zoo_Raph
 {
-    public partial class Zoo_Especes : Form
+    public partial class Mon_Zoo : Form
     {
-        public Zoo_Especes()
+        public Mon_Zoo()
         {
             InitializeComponent();
         }

@@ -1,7 +1,7 @@
 ﻿
 namespace Zoo_Raph
 {
-    partial class Zoo_Especes
+    partial class Mon_Zoo
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
