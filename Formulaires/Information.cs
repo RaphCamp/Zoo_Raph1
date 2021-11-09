@@ -37,6 +37,9 @@ namespace Zoo_Raph
             this.Pic_Animal.Image = animalImage;
             //Informations relatives à son espèce
             this.Lab_Famille.Text = "Famille: " + Infos_Espece[Index_Espece].Famille; 
+            this.Lab_SousFamille.Text = "Sous-Famille: " + Infos_Espece[Index_Espece].Sous_famille;
+            this.Lab_Classe.Text = "Classe: " + Infos_Espece[Index_Espece].Classe;
+            this.Lab_Regime.Text = "Régime alimentaire: " + Infos_Espece[Index_Espece].régime;
         }
 
         private void Information_Load(object sender, EventArgs e)

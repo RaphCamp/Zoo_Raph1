@@ -39,6 +39,9 @@ namespace Zoo_Raph
             this.Lab_Statut = new System.Windows.Forms.Label();
             this.Pic_Animal = new System.Windows.Forms.PictureBox();
             this.Lab_Famille = new System.Windows.Forms.Label();
+            this.Lab_SousFamille = new System.Windows.Forms.Label();
+            this.Lab_Classe = new System.Windows.Forms.Label();
+            this.Lab_Regime = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Animal)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,6 +118,8 @@ namespace Zoo_Raph
             // 
             // Pic_Animal
             // 
+            this.Pic_Animal.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.Pic_Animal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.Pic_Animal.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Pic_Animal.ErrorImage")));
             this.Pic_Animal.Image = global::Zoo_Raph.Properties.Resources.who;
             this.Pic_Animal.InitialImage = ((System.Drawing.Image)(resources.GetObject("Pic_Animal.InitialImage")));
@@ -129,17 +134,50 @@ namespace Zoo_Raph
             // 
             this.Lab_Famille.AutoSize = true;
             this.Lab_Famille.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lab_Famille.Location = new System.Drawing.Point(349, 122);
+            this.Lab_Famille.Location = new System.Drawing.Point(349, 134);
             this.Lab_Famille.Name = "Lab_Famille";
             this.Lab_Famille.Size = new System.Drawing.Size(67, 20);
             this.Lab_Famille.TabIndex = 19;
             this.Lab_Famille.Text = "Famille: ";
+            // 
+            // Lab_SousFamille
+            // 
+            this.Lab_SousFamille.AutoSize = true;
+            this.Lab_SousFamille.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lab_SousFamille.Location = new System.Drawing.Point(563, 134);
+            this.Lab_SousFamille.Name = "Lab_SousFamille";
+            this.Lab_SousFamille.Size = new System.Drawing.Size(109, 20);
+            this.Lab_SousFamille.TabIndex = 20;
+            this.Lab_SousFamille.Text = "Sous-Famille: ";
+            // 
+            // Lab_Classe
+            // 
+            this.Lab_Classe.AutoSize = true;
+            this.Lab_Classe.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lab_Classe.Location = new System.Drawing.Point(349, 223);
+            this.Lab_Classe.Name = "Lab_Classe";
+            this.Lab_Classe.Size = new System.Drawing.Size(65, 20);
+            this.Lab_Classe.TabIndex = 21;
+            this.Lab_Classe.Text = "Classe: ";
+            // 
+            // Lab_Regime
+            // 
+            this.Lab_Regime.AutoSize = true;
+            this.Lab_Regime.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lab_Regime.Location = new System.Drawing.Point(349, 358);
+            this.Lab_Regime.Name = "Lab_Regime";
+            this.Lab_Regime.Size = new System.Drawing.Size(149, 20);
+            this.Lab_Regime.TabIndex = 22;
+            this.Lab_Regime.Text = "Régime alimentaire:";
             // 
             // Information
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(821, 582);
+            this.Controls.Add(this.Lab_Regime);
+            this.Controls.Add(this.Lab_Classe);
+            this.Controls.Add(this.Lab_SousFamille);
             this.Controls.Add(this.Lab_Famille);
             this.Controls.Add(this.Pic_Animal);
             this.Controls.Add(this.Lab_Statut);
@@ -169,5 +207,8 @@ namespace Zoo_Raph
         private System.Windows.Forms.Label Lab_Statut;
         private System.Windows.Forms.PictureBox Pic_Animal;
         private System.Windows.Forms.Label Lab_Famille;
+        private System.Windows.Forms.Label Lab_SousFamille;
+        private System.Windows.Forms.Label Lab_Classe;
+        private System.Windows.Forms.Label Lab_Regime;
     }
 }
