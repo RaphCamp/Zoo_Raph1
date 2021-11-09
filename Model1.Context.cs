@@ -13,10 +13,10 @@ namespace Zoo_Raph
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class ZOO_RaphEntities : DbContext
+    public partial class ZOO_RaphEntities2 : DbContext
     {
-        public ZOO_RaphEntities()
-            : base("name=ZOO_RaphEntities")
+        public ZOO_RaphEntities2()
+            : base("name=ZOO_RaphEntities2")
         {
         }
     

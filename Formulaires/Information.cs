@@ -13,12 +13,12 @@ namespace Zoo_Raph
     public partial class Information : Form
     {
 
-        private ZOO_RaphEntities MesDonnees;
+        private ZOO_RaphEntities2 MesDonnees;
 
         public Information(string animalName, Image animalImage)
         {
             //instanciation de la bdd
-            MesDonnees = new ZOO_RaphEntities();
+            MesDonnees = new ZOO_RaphEntities2();
             //Récupération des information de l'animal
             List<Zoo_Raph.Animaux> Infos = MesDonnees.Animaux.ToList();
             int Index = Infos.FindIndex(i => i.Nom == animalName);
