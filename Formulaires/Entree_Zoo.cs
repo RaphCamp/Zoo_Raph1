@@ -34,5 +34,12 @@ namespace Zoo_Raph
             lions.StartPosition = FormStartPosition.CenterParent;
             lions.ShowDialog();
         }
+
+        private void Btn_Oiseau_Click(object sender, EventArgs e)
+        {
+            List_Animaux oiseaux = new List_Animaux();
+            oiseaux.StartPosition = FormStartPosition.CenterParent;
+            oiseaux.ShowDialog();
+        }
     }
 }

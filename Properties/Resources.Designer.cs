@@ -103,6 +103,16 @@ namespace Zoo_Raph.Properties {
         /// <summary>
         ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap oiseau {
+            get {
+                object obj = ResourceManager.GetObject("oiseau", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Recherche une ressource localisée de type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Steakos {
             get {
                 object obj = ResourceManager.GetObject("Steakos", resourceCulture);

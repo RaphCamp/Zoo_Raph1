@@ -79,6 +79,12 @@
     <Compile Include="Formulaires\Lions.Designer.cs">
       <DependentUpon>Lions.cs</DependentUpon>
     </Compile>
+    <Compile Include="Formulaires\List_Animaux.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulaires\List_Animaux.Designer.cs">
+      <DependentUpon>List_Animaux.cs</DependentUpon>
+    </Compile>
     <Compile Include="Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -118,6 +124,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Formulaires\Taureaux.resx">
       <DependentUpon>Taureaux.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulaires\List_Animaux.resx">
+      <DependentUpon>List_Animaux.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -193,6 +202,7 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="image\oiseau.jpg" />
     <Content Include="Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>

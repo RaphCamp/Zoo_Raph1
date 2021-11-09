@@ -33,9 +33,12 @@ namespace Zoo_Raph
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.Btn_Taureaux = new System.Windows.Forms.Button();
             this.Btn_Lions = new System.Windows.Forms.Button();
+            this.Btn_Oiseau = new System.Windows.Forms.Button();
+            this.Pic_Oiseau = new System.Windows.Forms.PictureBox();
             this.Pic_Lions = new System.Windows.Forms.PictureBox();
             this.Pic_Taureaux = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Oiseau)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Lions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Taureaux)).BeginInit();
             this.SuspendLayout();
@@ -64,6 +67,26 @@ namespace Zoo_Raph
             this.Btn_Lions.UseVisualStyleBackColor = true;
             this.Btn_Lions.Click += new System.EventHandler(this.Btn_Lions_Click);
             // 
+            // Btn_Oiseau
+            // 
+            this.Btn_Oiseau.Location = new System.Drawing.Point(482, 191);
+            this.Btn_Oiseau.Name = "Btn_Oiseau";
+            this.Btn_Oiseau.Size = new System.Drawing.Size(151, 33);
+            this.Btn_Oiseau.TabIndex = 5;
+            this.Btn_Oiseau.Text = "Oiseau";
+            this.Btn_Oiseau.UseVisualStyleBackColor = false;
+            this.Btn_Oiseau.Click += new System.EventHandler(this.Btn_Oiseau_Click);
+            // 
+            // Pic_Oiseau
+            // 
+            this.Pic_Oiseau.Image = global::Zoo_Raph.Properties.Resources.oiseau;
+            this.Pic_Oiseau.Location = new System.Drawing.Point(482, 47);
+            this.Pic_Oiseau.Name = "Pic_Oiseau";
+            this.Pic_Oiseau.Size = new System.Drawing.Size(149, 150);
+            this.Pic_Oiseau.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pic_Oiseau.TabIndex = 4;
+            this.Pic_Oiseau.TabStop = false;
+            // 
             // Pic_Lions
             // 
             this.Pic_Lions.Image = global::Zoo_Raph.Properties.Resources.lion;
@@ -87,6 +110,8 @@ namespace Zoo_Raph
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 618);
+            this.Controls.Add(this.Btn_Oiseau);
+            this.Controls.Add(this.Pic_Oiseau);
             this.Controls.Add(this.Btn_Lions);
             this.Controls.Add(this.Btn_Taureaux);
             this.Controls.Add(this.Pic_Lions);
@@ -96,6 +121,7 @@ namespace Zoo_Raph
             this.Text = "Zoo de Campagnac";
             this.Load += new System.EventHandler(this.Form_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pic_Oiseau)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Lions)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Taureaux)).EndInit();
             this.ResumeLayout(false);
@@ -109,6 +135,8 @@ namespace Zoo_Raph
         private System.Windows.Forms.PictureBox Pic_Lions;
         private System.Windows.Forms.Button Btn_Lions;
         private System.Windows.Forms.Button Btn_Taureaux;
+        private System.Windows.Forms.Button Btn_Oiseau;
+        private System.Windows.Forms.PictureBox Pic_Oiseau;
     }
 }
 

@@ -38,6 +38,7 @@ namespace Zoo_Raph
             this.Lab_Age = new System.Windows.Forms.Label();
             this.Lab_Statut = new System.Windows.Forms.Label();
             this.Pic_Animal = new System.Windows.Forms.PictureBox();
+            this.Lab_Famille = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Animal)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,7 +56,7 @@ namespace Zoo_Raph
             // 
             this.Lab_Name.AutoSize = true;
             this.Lab_Name.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lab_Name.Location = new System.Drawing.Point(79, 24);
+            this.Lab_Name.Location = new System.Drawing.Point(54, 280);
             this.Lab_Name.Name = "Lab_Name";
             this.Lab_Name.Size = new System.Drawing.Size(185, 24);
             this.Lab_Name.TabIndex = 12;
@@ -66,7 +67,7 @@ namespace Zoo_Raph
             // 
             this.Lab_Sex.AutoSize = true;
             this.Lab_Sex.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lab_Sex.Location = new System.Drawing.Point(301, 307);
+            this.Lab_Sex.Location = new System.Drawing.Point(54, 358);
             this.Lab_Sex.Name = "Lab_Sex";
             this.Lab_Sex.Size = new System.Drawing.Size(49, 20);
             this.Lab_Sex.TabIndex = 13;
@@ -76,7 +77,7 @@ namespace Zoo_Raph
             // 
             this.Lab_Espece.AutoSize = true;
             this.Lab_Espece.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lab_Espece.Location = new System.Drawing.Point(54, 307);
+            this.Lab_Espece.Location = new System.Drawing.Point(349, 47);
             this.Lab_Espece.Name = "Lab_Espece";
             this.Lab_Espece.Size = new System.Drawing.Size(63, 20);
             this.Lab_Espece.TabIndex = 14;
@@ -86,7 +87,7 @@ namespace Zoo_Raph
             // 
             this.Lab_SousEspece.AutoSize = true;
             this.Lab_SousEspece.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lab_SousEspece.Location = new System.Drawing.Point(54, 372);
+            this.Lab_SousEspece.Location = new System.Drawing.Point(563, 47);
             this.Lab_SousEspece.Name = "Lab_SousEspece";
             this.Lab_SousEspece.Size = new System.Drawing.Size(105, 20);
             this.Lab_SousEspece.TabIndex = 15;
@@ -96,7 +97,7 @@ namespace Zoo_Raph
             // 
             this.Lab_Age.AutoSize = true;
             this.Lab_Age.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Lab_Age.Location = new System.Drawing.Point(301, 372);
+            this.Lab_Age.Location = new System.Drawing.Point(54, 421);
             this.Lab_Age.Name = "Lab_Age";
             this.Lab_Age.Size = new System.Drawing.Size(38, 20);
             this.Lab_Age.TabIndex = 16;
@@ -117,18 +118,29 @@ namespace Zoo_Raph
             this.Pic_Animal.ErrorImage = ((System.Drawing.Image)(resources.GetObject("Pic_Animal.ErrorImage")));
             this.Pic_Animal.Image = global::Zoo_Raph.Properties.Resources.who;
             this.Pic_Animal.InitialImage = ((System.Drawing.Image)(resources.GetObject("Pic_Animal.InitialImage")));
-            this.Pic_Animal.Location = new System.Drawing.Point(58, 51);
+            this.Pic_Animal.Location = new System.Drawing.Point(46, 47);
             this.Pic_Animal.Name = "Pic_Animal";
             this.Pic_Animal.Size = new System.Drawing.Size(222, 196);
             this.Pic_Animal.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Pic_Animal.TabIndex = 18;
             this.Pic_Animal.TabStop = false;
             // 
+            // Lab_Famille
+            // 
+            this.Lab_Famille.AutoSize = true;
+            this.Lab_Famille.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Lab_Famille.Location = new System.Drawing.Point(349, 122);
+            this.Lab_Famille.Name = "Lab_Famille";
+            this.Lab_Famille.Size = new System.Drawing.Size(67, 20);
+            this.Lab_Famille.TabIndex = 19;
+            this.Lab_Famille.Text = "Famille: ";
+            // 
             // Information
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(821, 582);
+            this.Controls.Add(this.Lab_Famille);
             this.Controls.Add(this.Pic_Animal);
             this.Controls.Add(this.Lab_Statut);
             this.Controls.Add(this.Lab_Age);
@@ -156,5 +168,6 @@ namespace Zoo_Raph
         private System.Windows.Forms.Label Lab_Age;
         private System.Windows.Forms.Label Lab_Statut;
         private System.Windows.Forms.PictureBox Pic_Animal;
+        private System.Windows.Forms.Label Lab_Famille;
     }
 }
