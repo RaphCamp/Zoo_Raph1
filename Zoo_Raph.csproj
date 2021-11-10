@@ -193,7 +193,7 @@
     <None Include="image\Hercule.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="image\Léo.png" />
+    <None Include="image\Leo.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="image\who.jpg" />

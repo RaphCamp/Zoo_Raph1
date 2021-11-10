@@ -17,6 +17,7 @@ namespace Zoo_Raph
             InitializeComponent();
         }
 
+
         private void Form_Load(object sender, EventArgs e)
         {
             // TODO: cette ligne de code charge les données dans la table 'zOO_RaphDataSet.Animaux'. Vous pouvez la déplacer ou la supprimer selon les besoins.
@@ -44,10 +45,23 @@ namespace Zoo_Raph
             oiseaux.ShowDialog();
         }
 
+
         private void Btn_Voir_Click(object sender, EventArgs e)
         {
-            Information Info = new Information(this.Combo_Voir.Text, this.Pic_Lions.Image);
-            Info.StartPosition = FormStartPosition.CenterParent;
+
+            Image image = global::Zoo_Raph.Properties.Resources.who ;
+/*            try
+            {
+                image = Image.FromFile(this.Combo_Voir.Text);
+
+            }
+            catch
+            {
+                image = global::Zoo_Raph.Properties.Resources.who;
+
+            }*/
+            Information Info = new Information(this.Combo_Voir.Text, image);
+            Info.StartPosition = FormStartPosition.CenterParent; 
             Info.ShowDialog();
         }
     }
