@@ -37,10 +37,17 @@ namespace Zoo_Raph
             this.Pic_Oiseau = new System.Windows.Forms.PictureBox();
             this.Pic_Lions = new System.Windows.Forms.PictureBox();
             this.Pic_Taureaux = new System.Windows.Forms.PictureBox();
+            this.Combo_Voir = new System.Windows.Forms.ComboBox();
+            this.zOO_RaphDataSet = new Zoo_Raph.ZOO_RaphDataSet();
+            this.animauxBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.animauxTableAdapter = new Zoo_Raph.ZOO_RaphDataSetTableAdapters.AnimauxTableAdapter();
+            this.Btn_Voir = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Oiseau)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Lions)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Taureaux)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zOO_RaphDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.animauxBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // errorProvider1
@@ -105,18 +112,57 @@ namespace Zoo_Raph
             this.Pic_Taureaux.TabIndex = 0;
             this.Pic_Taureaux.TabStop = false;
             // 
-            // Zoo_Especes
+            // Combo_Voir
+            // 
+            this.Combo_Voir.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.animauxBindingSource, "Nom", true));
+            this.Combo_Voir.DataSource = this.animauxBindingSource;
+            this.Combo_Voir.DisplayMember = "Nom";
+            this.Combo_Voir.FormattingEnabled = true;
+            this.Combo_Voir.Location = new System.Drawing.Point(58, 381);
+            this.Combo_Voir.Name = "Combo_Voir";
+            this.Combo_Voir.Size = new System.Drawing.Size(151, 21);
+            this.Combo_Voir.TabIndex = 6;
+            this.Combo_Voir.Text = "Nom";
+            this.Combo_Voir.ValueMember = "Nom";
+            // 
+            // zOO_RaphDataSet
+            // 
+            this.zOO_RaphDataSet.DataSetName = "ZOO_RaphDataSet";
+            this.zOO_RaphDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // animauxBindingSource
+            // 
+            this.animauxBindingSource.DataMember = "Animaux";
+            this.animauxBindingSource.DataSource = this.zOO_RaphDataSet;
+            // 
+            // animauxTableAdapter
+            // 
+            this.animauxTableAdapter.ClearBeforeFill = true;
+            // 
+            // Btn_Voir
+            // 
+            this.Btn_Voir.Location = new System.Drawing.Point(58, 402);
+            this.Btn_Voir.Name = "Btn_Voir";
+            this.Btn_Voir.Size = new System.Drawing.Size(151, 27);
+            this.Btn_Voir.TabIndex = 7;
+            this.Btn_Voir.Text = "Voir";
+            this.Btn_Voir.UseVisualStyleBackColor = true;
+            this.Btn_Voir.Click += new System.EventHandler(this.Btn_Voir_Click);
+            // 
+            // Mon_Zoo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(929, 618);
+            this.Controls.Add(this.Btn_Voir);
+            this.Controls.Add(this.Combo_Voir);
             this.Controls.Add(this.Btn_Oiseau);
             this.Controls.Add(this.Pic_Oiseau);
             this.Controls.Add(this.Btn_Lions);
             this.Controls.Add(this.Btn_Taureaux);
             this.Controls.Add(this.Pic_Lions);
             this.Controls.Add(this.Pic_Taureaux);
-            this.Name = "Zoo_Especes";
+            this.Name = "Mon_Zoo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Zoo de Campagnac";
             this.Load += new System.EventHandler(this.Form_Load);
@@ -124,6 +170,8 @@ namespace Zoo_Raph
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Oiseau)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Lions)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Pic_Taureaux)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.zOO_RaphDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.animauxBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -137,6 +185,11 @@ namespace Zoo_Raph
         private System.Windows.Forms.Button Btn_Taureaux;
         private System.Windows.Forms.Button Btn_Oiseau;
         private System.Windows.Forms.PictureBox Pic_Oiseau;
+        private System.Windows.Forms.ComboBox Combo_Voir;
+        private ZOO_RaphDataSet zOO_RaphDataSet;
+        private System.Windows.Forms.BindingSource animauxBindingSource;
+        private ZOO_RaphDataSetTableAdapters.AnimauxTableAdapter animauxTableAdapter;
+        private System.Windows.Forms.Button Btn_Voir;
     }
 }
 

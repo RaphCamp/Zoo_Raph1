@@ -19,6 +19,8 @@ namespace Zoo_Raph
 
         private void Form_Load(object sender, EventArgs e)
         {
+            // TODO: cette ligne de code charge les données dans la table 'zOO_RaphDataSet.Animaux'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.animauxTableAdapter.Fill(this.zOO_RaphDataSet.Animaux);
         }
 
         private void Btn_Taureaux_Click(object sender, EventArgs e)
@@ -40,6 +42,13 @@ namespace Zoo_Raph
             List_Animaux oiseaux = new List_Animaux();
             oiseaux.StartPosition = FormStartPosition.CenterParent;
             oiseaux.ShowDialog();
+        }
+
+        private void Btn_Voir_Click(object sender, EventArgs e)
+        {
+            Information Info = new Information(this.Combo_Voir.Text, this.Pic_Lions.Image);
+            Info.StartPosition = FormStartPosition.CenterParent;
+            Info.ShowDialog();
         }
     }
 }
